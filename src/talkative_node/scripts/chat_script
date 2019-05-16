@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+import talkative_node.node_code as chatter
+
+chatter.easytalk()
+
+

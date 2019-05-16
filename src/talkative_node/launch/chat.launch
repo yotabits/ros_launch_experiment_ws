@@ -1,0 +1,12 @@
+<launch>
+
+  <node   name="talkative_node"
+          pkg="talkative_node"
+          type="chat_script"
+          required="False"
+          output="screen">
+    <param name="private_param" value="default_interlocutor"/>
+    
+    <remap from="~private_param" to="/a_cool_guy"/>
+  </node>
+</launch>
