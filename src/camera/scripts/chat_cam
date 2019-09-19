@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+import argparse
+import rospy
+
+from camera.node_code import cameras_can_talk
+
+
+if __name__ == '__main__':
+    rospy.init_node("DO NOT USE")
+    name = rospy.get_param('~name', "NONAME")
+    resolution = rospy.get_param('~resolution', "NORES")
+    cameras_can_talk(name, resolution)

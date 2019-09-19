@@ -1,1 +1,12 @@
-a_cool_guy: "Falco Lombardi"
+a_cool_guy: "Falco Lombardiii"
+camera_info:
+    John:
+      resolution: 2x2
+    Fitz:
+      resolution: 4x4
+    Herald:
+      resolution: 16x16
+    Ken:
+      resolution: 32x32
+    Eddy:
+      resolution: 64x64

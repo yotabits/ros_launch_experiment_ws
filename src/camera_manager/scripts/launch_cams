@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+import rospy
+import roslaunch
+
+def launch_cams():
+    run_id = rospy.get_param("/run_id")
+    roslaunch.configure_logging(run_id)
+    launch = roslaunch.scriptapi.ROSLaunch()
+    launch.start()
+
+    cam_dict = rospy.get_param("/camera", {})
+
+    for cam_name, cam_info_dict in cam_dict.iteritems():
+        node = roslaunch.core.Node("camera", "chat_cam", name=cam_name, output='screen', namespace="camera")
+        launch.launch(node)
+        rospy.sleep(1)
+    launch.spin()
+
+
+if __name__ == '__main__':
+    launch_cams()

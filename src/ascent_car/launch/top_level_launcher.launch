@@ -2,4 +2,5 @@
 <launch>
     <rosparam command="load" file="$(env CONF_FILE_PATH)"></rosparam>
     <include file="$(find talkative_node)/launch/chat.launch"/>
+    <include file="$(find camera_manager)/launch/camera_manager.launch"/>
 </launch>

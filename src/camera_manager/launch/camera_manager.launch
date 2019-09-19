@@ -1,0 +1,9 @@
+<launch>
+
+  <node   name="camera_manager"
+          pkg="camera_manager"
+          type="launch_cams"
+          required="False"
+          output="screen">
+  </node>
+</launch>
