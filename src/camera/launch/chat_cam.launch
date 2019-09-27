@@ -1,0 +1,13 @@
+<launch>
+
+  <node   name="roslaunched_camera"
+          pkg="camera"
+          type="chat_cam"
+          required="False"
+          output="screen">
+          <param name="resolution" value="42x42"/>
+          <param name="name" value="yolo_swagg"/>
+
+
+  </node>
+</launch>
